@@ -1,0 +1,19 @@
+import os --->un module  fournit par Python dont le but d’interagir avec le système d’exploitation.
+
+
+myList = os.listdir(path) --->Python method listdir() returns a list containing the names of the entries in the directory given by path.
+The list is in arbitrary order. It does not include the special entries '.' and '..' even if they are present in the directory.
+
+
+img = cv2.equalizeHist(img) ---> Consider an image whose pixel values are confined to some specific range of values only.
+For eg, brighter image will have all pixels confined to high values. But a good image will have pixels from all regions of the image.
+So you need to stretch this histogram to either ends (as given in below image, from wikipedia)
+and that is what Histogram Equalization does (in simple words). ***This normally improves the contrast of the image***.
+
+
+
+X_train = np.array(list(map(preprocessing, X_train)))--->  # TO IRETATE AND PREPROCESS ALL IMAGES
+
+
+img = np.asarray(imgOrignal) --->numpy. asarray() function is used when we want to convert input to an array.
+Input can be lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.
